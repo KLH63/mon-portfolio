@@ -1,4 +1,5 @@
 import React from 'react';
+import klhub from "/klhub.png";
 
 const AboutMe = () => {
     return (
@@ -19,7 +20,7 @@ const AboutMe = () => {
         {/* Colonne droite */}
         <div className="mt-10 md:mt-25 animate-bounce [animation-duration:2s] col-span-12 md:col-span-7 flex flex-col justify-center">
             <div className="w-full max-w-[280px] sm:max-w-xs md:max-w-md lg:max-w-lg mx-auto flex items-end justify-center backdrop-blur-sm">
-                <img src="/klhub(1).png" className="rounded-4xl w-full h-auto object-cover" />
+                <img src= {klhub} className="rounded-4xl w-full h-auto object-cover" />
             </div>
         </div>
         </div>

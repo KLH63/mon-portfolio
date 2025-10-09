@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import klhub from "/klhub.png";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +8,7 @@ const Navbar = () => {
         <nav className="sticky top-0 left-0 w-full px-6 py-4 flex items-center shadow-md z-50 bg-white">
             {/* Logo */}
             <div className="flex items-center font-bold text-violet-900  gap-2">
-                <img src="/klhub(1).png" alt="logo" className="h-10 w-10 object-contain" />
+                <img src={klhub} alt="logo" className="h-10 w-10 object-contain" />
                 <span>Jawad Kallouhi</span>
             </div>
 
