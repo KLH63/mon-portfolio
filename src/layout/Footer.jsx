@@ -3,20 +3,23 @@ import klhub from "/klhub.png";
 
 const Footer = () => {
     return (
-        <div className="py-20 bg-violet-50">
+        <div className="pb-5 bg-gray-900">
             <div className="container mx-auto px-6 text-center">
-                <div className="grid md:grid-cols-3 items-center mb-10 mt-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 py-6">
 
-                    <img src={klhub} alt="logo" className="h-34 w-34 object-contain"/>
+                    <div className="flex flex-col items-center md:items-start">
+                        <img src={klhub} alt="logo" className="h-34 w-34 object-contain"/>
+                    </div>
+
 
                     <div className="flex justify-center space-x-6">
-                    <a
-                        href="https://github.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-background/80 hover:text-background transition-colors duration-200 hover:scale-110 transform"
-                    >
-                    <span className="[&>svg]:h-10 [&>svg]:w-10 [&>svg]:fill-[#333]">
+                        <a
+                            href="https://github.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-background/80 hover:text-background transition-colors duration-200 hover:scale-110 transform"
+                        >
+                            <span className="[&>svg]:h-10 [&>svg]:w-10 [&>svg]:fill-[#FFF]">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                             <path
                                 d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2
@@ -24,7 +27,7 @@ const Footer = () => {
                                 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
                         </svg>
 </span>
-                    </a>
+                        </a>
                         <a
                             href="http://linkedin.com"
                             target="_blank"
@@ -33,15 +36,17 @@ const Footer = () => {
                         >
 
                             <span className="[&>svg]:h-10 [&>svg]:w-10 [&>svg]:fill-[#0077b5]">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path
-                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9
-                            448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
-                    </svg>
-                    </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9
+                                        448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+                                </svg>
+                            </span>
                         </a>
                     </div>
+                </div>
+
+                <div className="border-t border-background/20 pt-4 text-center">
                 </div>
 
                 <p className="text-gray-500">

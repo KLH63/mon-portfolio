@@ -3,13 +3,13 @@ import {EnvelopeIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/outline/i
 
 const ContactMe = () => {
     return (
-        <section id="projects" className="py-20 bg-gray-50">
+        <section id="contact" className="py-10 bg-gray-50">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 text-foreground">
                         Restons en contact
                     </h2>
-                    <p className="text-gray-500 text-xl leading-relaxed mb-8">
+                    <p className="text-gray-500 text-xl leading-relaxed mb-15">
                         Envie de donner vie à votre projet ? Écrivons ensemble la prochaine étape.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

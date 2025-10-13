@@ -100,7 +100,7 @@ const MyProject = () => {
                                                 href={project.liveUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="btn btn-sm"
+                                                className="btn-violet btn-sm"
                                             >
                                                 <ArrowTopRightOnSquareIcon className="h-4 w-4" />
                                                 Demo
