@@ -42,7 +42,7 @@ const MyProject = () => {
 
     return (
 
-        <section id="projects" className="py-20 bg-gray-50">
+        <section id="projects" className="scroll-mt-15 py-20 bg-gray-50">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 text-foreground">
@@ -86,7 +86,7 @@ const MyProject = () => {
                                             {project.technologies.map((tech) => (
                                                 <span
                                                     key={tech}
-                                                    className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full hover:bg-primary/10 hover:text-primary transition-colors duration-200"
+                                                    className="px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full hover:bg-primary/10 hover:text-primary transition-colors duration-200 hover:animate-jump"
                                                 >
                                                     {tech}
                                                 </span>

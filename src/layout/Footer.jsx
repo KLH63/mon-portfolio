@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 py-6">
 
                     <div className="flex flex-col items-center md:items-start">
-                        <img src={klhub} alt="logo" className="h-34 w-34 object-contain"/>
+                        <img src={klhub} alt="logo" className="h-34 w-34 object-contain animate-pulse"/>
                     </div>
 
 

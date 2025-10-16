@@ -3,7 +3,7 @@ import {EnvelopeIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/outline/i
 
 const ContactMe = () => {
     return (
-        <section id="contact" className="py-10 bg-gray-50">
+        <section id="contact" className="scroll-mt-15 py-10 bg-gray-50">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 text-foreground">

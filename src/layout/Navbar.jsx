@@ -15,15 +15,18 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-1 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 right-0 mx-auto 
-             sm:w-[95%] md:max-w-3xl px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 flex items-center justify-center shadow-md bg-gray-900 rounded-4xl gap-2 ${
+        <nav className={`fixed top-1 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 right-0 mx-auto w-[95%]
+             sm:w-[98%] md:max-w-3xl px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 flex items-center justify-start shadow-md bg-gray-900 rounded-4xl gap-2 ${
                 isScrolled ? "md:max-w-3xl" : "md:max-w-5xl"
             }`
         }>
             {/* Logo */}
-            <div className="flex items-center font-bold text-violet-500 gap-5">
-                <img src={klhub} alt="logo" className="h-12 w-12 object-contain bg-gray-200 rounded-4xl p-1" />
-                <span>Jawad Kallouhi</span>
+            <div className="flex items-center font-bold text-violet-500 gap-4 cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+                <img src={klhub} alt="logo" className="h-12 w-12 object-contain bg-gray-200 rounded-4xl p-1 animate-pulse [animation-duration:2.5s]" />
+                <span className="hidden md:inline">Jawad Kallouhi</span>
+                <a href="#about" className="text-gray-200 inline md:hidden animate-flip-down">À propos</a>
+                <a href="#projects" className="text-gray-200 inline md:hidden animate-flip-down">Projets</a>
+                <a href="#contact" className="text-gray-200 inline md:hidden animate-flip-down">Contact</a>
             </div>
 
             {/* Liens Desktop (centrés) */}
@@ -78,21 +81,21 @@ const Navbar = () => {
             </div>*/}
 
             {/* Bouton Mobile (menu hamburger) */}
-            <button
+            {/*<button
                 className="md:hidden ml-auto text-2xl focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {isOpen ? "✖" : "☰"}
-            </button>
+            </button>*/}
 
             {/* Menu Mobile */}
-            {isOpen && (
+            {/*{isOpen && (
                 <ul className="absolute top-16 left-0 w-full bg-gray-100 flex flex-col items-center gap-6 py-6 md:hidden">
                     <li><a href="#about" className="hover:text-blue-400">À propos</a></li>
                     <li><a href="#projects" className="hover:text-blue-400">Projets</a></li>
                     <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
                 </ul>
-            )}
+            )}*/}
         </nav>
     );
 };

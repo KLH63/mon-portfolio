@@ -63,7 +63,7 @@ const MyExpertise = () => {
                                 {category.skills.map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-gray-100 px-3 py-2 rounded-lg text-center text-sm font-semibold text-gray-500 hover:bg-primary/10 hover:text-primary transition-colors duration-100"
+                                        className="bg-gray-100 px-3 py-2 rounded-lg text-center text-sm font-semibold text-gray-500 hover:bg-primary/10 hover:text-primary transition-colors duration-100 hover:animate-jump"
                                     >
                                         {skill}
                                     </div>
