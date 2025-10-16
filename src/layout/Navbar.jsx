@@ -15,7 +15,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-1 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 right-0 mx-auto w-[95%]
+        <nav className={`fixed top-3 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 right-0 mx-auto w-[95%]
              sm:w-[98%] md:max-w-3xl px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 flex items-center justify-start shadow-md bg-gray-900 rounded-4xl gap-2 ${
                 isScrolled ? "md:max-w-3xl" : "md:max-w-5xl"
             }`
